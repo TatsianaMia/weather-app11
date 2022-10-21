@@ -1,0 +1,15 @@
+<h1>{{ weatherDay.name }}</h1>
+<div class="current-weather">
+  <div class="clouds">
+    <h6>{{ weatherDay.weather[0].main }}</h6>
+    <img [src]="getIcon(weatherDay.weather[0].icon)" />
+  </div>
+  <div class="temp">
+   <h2>{{ weatherDay.main.temp.toFixed() }}°</h2>
+   <h6>Feels like: {{ weatherDay.main.feels_like.toFixed() }}°</h6>
+  </div>
+<!--  <div class="duration">
+    {{ getDate(weatherDay.sys.sunrise) }}
+    {{ getDate(weatherDay.sys.sunset) }}
+  </div> */-->
+</div>
